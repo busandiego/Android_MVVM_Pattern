@@ -1,5 +1,6 @@
 package com.recycler.movie
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.recycler.movie.adapter.MainAdapter
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var mainAdapter: MainAdapter
     val datas = mutableListOf<MovieScript>()
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             add(MovieScript(actor = "장동건", script = "니가가라 하와이"))
             add(MovieScript(actor = "원빈", script = "한발 남았다"))
             add(MovieScript(actor = "피터슨", script = "life is suffering"))
-
+            //
         }
 
         mainAdapter.datas = datas
