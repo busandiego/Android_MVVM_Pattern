@@ -32,7 +32,6 @@ class MainAdapter(private val context: Context):
     }
 
 
-
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
 
         private val actorView: TextView = itemView.findViewById(R.id.rv_item_first)
