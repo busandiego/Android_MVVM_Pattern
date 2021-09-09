@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         rv_main.adapter = mainAdapter
 
 
-/*
         datas.apply {
             add(MovieScript(actor = "장동건", script = "니가가라 하와이"))
             add(MovieScript(actor = "원빈", script = "한발 남았다"))
@@ -44,10 +43,13 @@ class MainActivity : AppCompatActivity() {
             add(MovieScript(actor = "피터슨", script = "life is suffering"))
             add(MovieScript(actor = "장동건", script = "니가가라 하와이"))
             add(MovieScript(actor = "원빈", script = "한발 남았다"))
+
+            add(MovieScript(actor = "피터슨", script = "life is suffering"))
+            add(MovieScript(actor = "피터슨", script = "life is suffering"))
+            add(MovieScript(actor = "피터슨", script = "life is suffering"))
             add(MovieScript(actor = "피터슨", script = "life is suffering"))
 
         }
-*/
 
         mainAdapter.datas = datas
         mainAdapter.notifyDataSetChanged()
